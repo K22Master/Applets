@@ -1,0 +1,24 @@
+<!-- 事件绑定 -->
+<button type="primary" bindtap="bindTapButton" id="Button1">按钮</button>
+<!-- 事件绑定，赋值 -->
+<view>
+  {{count}}
+</view>
+<button type="primary" bindtap="countAdd">+1</button>
+<!-- 事件绑定传参 -->
+<button type="primary" bindtap="bindTapEvent" data-addcounted="{{2}}">传值</button>
+<button type="primary" bindtap="bindTapAdd" data-addnum="{{2}}">+2</button>
+<view>
+  __________________________
+</view>
+<input type="text" bindinput="bindInputEvent"/>
+<input type="text" value="{{msg}}" bindinput="bindInputNum"/>
+<view>
+  {{msg}}
+</view>
+<!-- 列表渲染 -->
+<view>
+  <view wx:for="{{phone}}" wx:key="index">
+    索引是：{{index}},item项为{{item}}
+  </view>
+</view>

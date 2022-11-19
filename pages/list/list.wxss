@@ -1,0 +1,72 @@
+/* pages/list/list.wxss */
+.container1{
+  display: flex;
+  justify-content: space-around;
+}
+.container1 view{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.container1 view:nth-child(1){
+  background-color: aquamarine;
+}
+.container1 view:nth-child(2){
+  background-color: chartreuse;
+}
+.container1 view:nth-child(3){
+  background-color: darkcyan;
+}
+.container2{
+  border: 1px solid black;
+  height: 150px;
+  width: 100px;
+}
+.container2 view{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.container2 view:nth-child(1){
+  background-color: aquamarine;
+}
+.container2 view:nth-child(2){
+  background-color: chartreuse;
+}
+.container2 view:nth-child(3){
+  background-color: darkcyan;
+}
+/* 轮播图样式 */
+.swiper-container{
+  height: 150px;
+}
+.item{
+  height: 100%;
+  line-height: 150px;
+  text-align: center;
+}
+swiper-item:nth-child(1) .item{
+  background-color: chartreuse;
+}
+swiper-item:nth-child(2) .item{
+  background-color:coral
+}
+swiper-item:nth-child(3) .item{
+  background-color:cyan
+}
+swiper-item:nth-child(4) .item{
+  background-color:darkorange
+}
+image{
+  border: 1px solid darkred;
+  width: 100%;
+}
+input{
+  border: 1px solid darkkhaki;
+  width: 100px;
+  height: 10px;
+  margin: 5px;
+  padding: 2px;
+}
