@@ -22,3 +22,8 @@
     索引是：{{index}},item项为{{item}}
   </view>
 </view>
+<view>
+  <view wx:for="{{list}}" wx:key="id" class="listname">
+    {{item.name}}
+  </view>
+</view>

@@ -8,6 +8,7 @@ Page({
     count:0,
     msg:"你好！",
     phone:['华为','苹果','三星'],
+    list:[{id:1,name:'只是'},{id:2,name:'老师'},{id:3,name:'忘舞'}],
   },
   bindTapButton(e){
     console.log(e);
