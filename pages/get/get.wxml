@@ -1,2 +1,4 @@
 <!--pages/get/get.wxml-->
 <button type="primary" bindtap="getInfo">发送GET请求</button>
+<!-- 后退导航 -->
+<navigator open-type="navigateBack" delta="1">后退</navigator>

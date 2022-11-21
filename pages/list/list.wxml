@@ -27,3 +27,10 @@
     {{item.name}}
   </view>
 </view>
+<view>
+  -------------------------------------------
+</view>
+<!-- 跳转到tabBar页面 -->
+<navigator url="/pages/index/index" open-type="switchTab">跳转到主页</navigator>
+<!-- 跳转到非tabBar页面 -->
+<navigator url="/pages/get/get" open-type="navigate">跳转到get页面</navigator>
