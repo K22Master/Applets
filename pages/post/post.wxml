@@ -1,0 +1,2 @@
+<!--pages/post/post.wxml-->
+<button type="primary" bindtap="postInfo">POST请求</button>
