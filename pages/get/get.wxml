@@ -1,0 +1,2 @@
+<!--pages/get/get.wxml-->
+<button type="primary" bindtap="getInfo">发送GET请求</button>
