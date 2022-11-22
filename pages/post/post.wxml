@@ -1,2 +1,4 @@
 <!--pages/post/post.wxml-->
 <button type="primary" bindtap="postInfo">POST请求</button>
+<!-- 编程式导航返回上一级 -->
+<button bindtap="gotoBack">返回</button>

@@ -35,6 +35,18 @@ Page({
       msg:e.detail.value,
     });
   },
+   // 编程式导航跳转到index页面(tabBar页面)
+   gotoIndex(){
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  },
+  // 编程式导航跳转到非tabBar页面
+  gotoPost(){
+    wx.navigateTo({
+      url: '/pages/post/post',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
