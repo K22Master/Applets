@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    query:[]
   },
   // 发送get请求
   getInfo(){
@@ -30,7 +30,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    // 打印接收到的参数
+    console.log(options);
+    // 将参数转存到data中
+    this.setData({
+      query:options
+    });
   },
 
   /**

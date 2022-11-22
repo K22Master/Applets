@@ -47,6 +47,12 @@ Page({
       url: '/pages/post/post',
     })
   },
+  // 函数式导航传参
+  gotoGet(){
+    wx.navigateTo({
+      url: '/pages/get/get?name=ls&age=19',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -38,3 +38,7 @@
 <button bindtap="gotoIndex">跳转到index页面</button>
 <!-- 编程式导航跳转到非tabBar页面 -->
 <button bindtap="gotoPost">跳转到post页面</button>
+<!-- 声明式导航传参到非tabBar页面 -->
+<navigator url="/pages/get/get?name=zs&age=19">声明式导航传参</navigator>
+<!-- 函数式导航传参到非tabBar页面 -->
+<button bindtap="gotoGet">函数式导航传参</button>
