@@ -45,3 +45,6 @@
 <!-- <view style="height: 400px;background-color:darkblue;"></view> -->
 <!-- 局部引用自定义组件 -->
 <my-test></my-test>
+<view></view>
+<!-- 全局引用自定义组件 -->
+<my-test2></my-test2>

@@ -32,5 +32,8 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-test2":"/components/test2/test2"
+  }
 }
