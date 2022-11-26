@@ -44,7 +44,7 @@
 <button bindtap="gotoGet">函数式导航传参</button>
 <!-- <view style="height: 400px;background-color:darkblue;"></view> -->
 <!-- 局部引用自定义组件 -->
-<my-test></my-test>
+<my-test max="10"></my-test>
 <view></view>
 <!-- 全局引用自定义组件 -->
 <my-test2></my-test2>

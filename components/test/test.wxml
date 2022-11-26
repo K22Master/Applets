@@ -1,5 +1,6 @@
 <!--components/test/test.wxml-->
 <view class="textColor">
-  值为:{{count}}
+  值为:{{count}},{{max}}
 </view>
 <button bindtap="countAdd" data-num="{{2}}">+1</button>
+<button bindtap="maxAdd">properties的值增加</button>
