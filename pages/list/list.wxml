@@ -48,3 +48,5 @@
 <view></view>
 <!-- 全局引用自定义组件 -->
 <my-test2></my-test2>
+<view></view>
+<color-text></color-text>

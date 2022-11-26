@@ -4,3 +4,11 @@
 </view>
 <button bindtap="countAdd" data-num="{{2}}">+1</button>
 <button bindtap="maxAdd">properties的值增加</button>
+<!-- observers -->
+<view>
+  <view>
+    {{n1}}+{{n2}}={{sum}}
+  </view>
+<button bindtap="n1Add">n1+1</button>
+<button bindtap="n2Add">n2+1</button> 
+</view>

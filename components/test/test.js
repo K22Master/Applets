@@ -17,7 +17,10 @@ Component({
    * 组件的初始数据
    */
   data: {
-    count:1
+    count:1,
+    n1:0,
+    n2:0,
+    sum:0
   },
 
   /**
@@ -47,6 +50,23 @@ Component({
     maxAdd(){
       this.setData({
         max:this.properties.max+1,
+      });
+    },
+    n1Add(){
+      this.setData({
+        n1:this.data.n1+1,
+      });
+    },
+    n2Add(){
+      this.setData({
+        n2:this.data.n2+1,
+      })
+    }
+  },
+  observers:{
+    'n1, n2':function(newN1,newN2){
+      this.setData({
+        sum:newN1+newN2,
       });
     }
   }
