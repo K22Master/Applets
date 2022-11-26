@@ -1,0 +1,9 @@
+/* components/test3/test3.wxss */
+.colorBox{
+  width: 100%;
+  height: 200rpx;
+  color: #fff;
+  text-shadow: 0 0 2rpx black;
+  line-height: 200rpx;
+  text-align: center;
+}
