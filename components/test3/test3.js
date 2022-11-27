@@ -37,8 +37,19 @@ Component({
       this.setData({
         "rgb.b":this.data.rgb.b+5>255?255:this.data.rgb.b+5,
       })
+    },
+    // 随机颜色
+    randomColor(){
+      this.setData({
+        rgb:{
+          r:Math.floor(Math.random()*256),
+          g:Math.floor(Math.random()*256),
+          b:Math.floor(Math.random()*256)
+        }
+      });
     }
   },
+  // 监听属性 
   observers:{
     // 'rgb.r, rgb.g, rgb.b':function(r,g,b){
     //   this.setData({
@@ -51,12 +62,27 @@ Component({
       });
     }
   },
+  // 组件的生命周期
   lifetimes:{
     created(){
       console.log("crteated");
     },
     attached(){
       console.log("attached");
+    }
+  },
+  // 组件所在页面的生命周期
+  pageLifetimes:{
+    show:function(){
+      console.log("show~~~");
+      // 页面显示时调用随机颜色函数
+      this.randomColor();
+    },
+    hide:function(){
+      console.log("hide");
+    },
+    resize:function(){
+      console.log("resize");
     }
   }
 })
