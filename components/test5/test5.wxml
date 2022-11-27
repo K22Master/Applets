@@ -1,0 +1,5 @@
+<!--components/test5/test5.wxml-->
+<view>
+  子组件中的conut值为：{{count  }}
+</view>
+<button bindtap="addCount">+1</button>

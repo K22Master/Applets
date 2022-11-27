@@ -1,12 +1,12 @@
 <!-- 事件绑定 -->
-<button type="primary" bindtap="bindTapButton" id="Button1">按钮</button>
+<!-- <button type="primary" bindtap="bindTapButton" id="Button1">按钮</button> -->
 <!-- 事件绑定，赋值 -->
-<view>
+<!-- <view>
   {{count}}
 </view>
-<button type="primary" bindtap="countAdd">+1</button>
+<button type="primary" bindtap="countAdd">+1</button> -->
 <!-- 事件绑定传参 -->
-<button type="primary" bindtap="bindTapEvent" data-addcounted="{{2}}">传值</button>
+<!-- <button type="primary" bindtap="bindTapEvent" data-addcounted="{{2}}">传值</button>
 <button type="primary" bindtap="bindTapAdd" data-addnum="{{2}}">+2</button>
 <view>
   __________________________
@@ -15,9 +15,9 @@
 <input type="text" value="{{msg}}" bindinput="bindInputNum"/>
 <view>
   {{msg}}
-</view>
+</view> -->
 <!-- 列表渲染 -->
-<view>
+<!-- <view>
   <view wx:for="{{phone}}" wx:key="index">
     索引是：{{index}},item项为{{item}}
   </view>
@@ -29,38 +29,46 @@
 </view>
 <view>
   -------------------------------------------
-</view>
+</view> -->
 <!-- 跳转到tabBar页面 -->
-<navigator url="/pages/index/index" open-type="switchTab">跳转到主页</navigator>
+<!-- <navigator url="/pages/index/index" open-type="switchTab">跳转到主页</navigator> -->
 <!-- 跳转到非tabBar页面 -->
-<navigator url="/pages/get/get" open-type="navigate">跳转到get页面</navigator>
+<!-- <navigator url="/pages/get/get" open-type="navigate">跳转到get页面</navigator> -->
 <!-- 编程式导航跳转到tabBar页面 -->
-<button bindtap="gotoIndex">跳转到index页面</button>
+<!-- <button bindtap="gotoIndex">跳转到index页面</button> -->
 <!-- 编程式导航跳转到非tabBar页面 -->
-<button bindtap="gotoPost">跳转到post页面</button>
+<!-- <button bindtap="gotoPost">跳转到post页面</button> -->
 <!-- 声明式导航传参到非tabBar页面 -->
-<navigator url="/pages/get/get?name=zs&age=19">声明式导航传参</navigator>
+<!-- <navigator url="/pages/get/get?name=zs&age=19">声明式导航传参</navigator> -->
 <!-- 函数式导航传参到非tabBar页面 -->
-<button bindtap="gotoGet">函数式导航传参</button>
+<!-- <button bindtap="gotoGet">函数式导航传参</button> -->
 <!-- <view style="height: 400px;background-color:darkblue;"></view> -->
 <!-- 局部引用自定义组件 -->
-<my-test max="10"></my-test>
-<view></view>
+<!-- <my-test max="10"></my-test> -->
+<!-- <view></view> -->
 <!-- 全局引用自定义组件 -->
-<my-test2></my-test2>
-<view></view>
-<color-text></color-text>
-<view></view>
+<!-- <my-test2></my-test2> -->
+<!-- <view></view> -->
+<!-- <color-text></color-text> -->
+<!-- <view></view> -->
 <!-- 单个插槽 -->
-<slot-test>
+<!-- <slot-test>
   <view>
     这是通过插槽填充的内容
-  </view>
+  </view> -->
   <!-- 多个插槽 -->
-  <view slot="before">
+  <!-- <view slot="before">
     before
   </view>
   <view slot="after">
     after
   </view>
-</slot-test>
+</slot-test> -->
+
+<view>
+  父组件中，count的值为：{{count}}
+</view>
+<view>
+  ~~~~~~
+</view>
+<my-test5 count="{{count}}"></my-test5>
