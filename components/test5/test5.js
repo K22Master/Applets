@@ -22,6 +22,8 @@ Component({
       this.setData({
         count:this.properties.count+1,
       });
+      // 触发自定义事件，将数据传给父组件
+      this.triggerEvent("sync",{value:this.properties.count});
     }
   }
 })

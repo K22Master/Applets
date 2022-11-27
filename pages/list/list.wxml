@@ -64,11 +64,12 @@
     after
   </view>
 </slot-test> -->
-
+<!-- 属性绑定，父组件向子组件传递数据 -->
 <view>
   父组件中，count的值为：{{count}}
 </view>
 <view>
-  ~~~~~~
+  ~~~~~~  
 </view>
-<my-test5 count="{{count}}"></my-test5>
+<!-- 事件绑定，子组件向父组件传数据，使用自定义事件 -->
+<my-test5 count="{{count}}" bind:sync="syncCount"></my-test5>

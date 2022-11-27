@@ -53,6 +53,14 @@ Page({
       url: '/pages/get/get?name=ls&age=19',
     })
   },
+  // 定义一个自定义事件，让子组件调用
+  syncCount(e){
+    console.log("我被调用了！");
+    this.setData({
+      // 通过ewx.detail.value拿到数据
+      count:e.detail.value
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
