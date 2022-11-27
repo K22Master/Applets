@@ -1,0 +1,14 @@
+<!--components/test4/test4.wxml-->
+<view>
+  <view>
+    这里是内部组件
+  </view>
+  <!-- 插槽 -->
+  <slot></slot>
+  <!-- 多个插槽 -->
+  <slot name="before"></slot>
+  <view>
+    ~~~~~~~~~
+  </view>
+  <slot name="after"></slot>
+</view>

@@ -50,3 +50,17 @@
 <my-test2></my-test2>
 <view></view>
 <color-text></color-text>
+<view></view>
+<!-- 单个插槽 -->
+<slot-test>
+  <view>
+    这是通过插槽填充的内容
+  </view>
+  <!-- 多个插槽 -->
+  <view slot="before">
+    before
+  </view>
+  <view slot="after">
+    after
+  </view>
+</slot-test>
