@@ -75,4 +75,4 @@
 <!-- <my-test5 count="{{count}}" bind:sync="syncCount" id="childA"></my-test5>
 <button bindtap="getChild">获取子组件实例对象</button> -->
 <!-- 使用vantWebapp组件 -->
-<van-button type="primary">按钮</van-button>
+<van-button type="primary" bindtap="getInfo">按钮</van-button>

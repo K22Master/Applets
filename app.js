@@ -1,4 +1,10 @@
 // app.js
+// 导入miniprogram-api-promise包，开始promise化
+import {promisifyAll} from 'miniprogram-api-promise';
+// 定义成员，两个都指向通过一个空对象
+const wxp=wx.p={};
+// 通过promisifyAll进行promise化
+promisifyAll(wx,wxp);
 App({
 
   /**

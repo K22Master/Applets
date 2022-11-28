@@ -47,6 +47,17 @@ Page({
       url: '/pages/post/post',
     })
   },
+  async getInfo(){
+    const res= await wx.p.request({
+      url:'https://www.escook.cn/api/get',
+      method:"GET",
+      data:{
+        name:'zs',
+        age:18
+      }
+    });
+    console.log(res.data);
+  },
   // 函数式导航传参
   gotoGet(){
     wx.navigateTo({
