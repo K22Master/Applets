@@ -22,3 +22,10 @@
     <button bindtap="addCount">+1</button>
   </view>
 </view>
+<view>
+  {{numA}}+{{numB}}={{sum}}
+</view>
+<view>
+  <van-button type="primary" bindtap="numABtn" data-step="{{1}}">numA+1</van-button>
+  <van-button type="primary" bindtap="numABtn" data-step="{{-1}}">numA-1</van-button>
+</view>

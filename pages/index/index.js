@@ -1,4 +1,7 @@
 // index.js
+// 获取mobx的绑定以及store实例
+import {createStoreBindings} from "mobx-miniprogram-bindings";
+import {store} from "../../store/store"
 // 获取应用实例
 const app = getApp()
 
@@ -27,7 +30,20 @@ Page({
       this.setData({
         canIUseGetUserProfile: true
       })
-    }
+    };
+    // 为this挂在一个属性
+    this.storeBindings= createStoreBindings(this,{
+      // 数据源
+      store,
+      // 字段
+      fields:['numA','numB','sum'],
+      // 方法
+      actions:["updateNumA"],
+    });
+  },
+  numABtn(e){
+    console.log(e.target.dataset.step);
+    this.updateNumA(e.target.dataset.step);
   },
     /**
    * 页面相关事件处理函数--监听用户下拉动作
@@ -59,5 +75,9 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  //在onUnload生命周期函数处清除
+  onUnload(){
+    this.storeBindings.detrpyStoreBindings();
   }
 })
