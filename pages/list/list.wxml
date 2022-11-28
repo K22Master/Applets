@@ -65,12 +65,14 @@
   </view>
 </slot-test> -->
 <!-- 属性绑定，父组件向子组件传递数据 -->
-<view>
+<!-- <view>
   父组件中，count的值为：{{count}}
 </view>
 <view>
   ~~~~~~  
-</view>
+</view> -->
 <!-- 事件绑定，子组件向父组件传数据，使用自定义事件 -->
-<my-test5 count="{{count}}" bind:sync="syncCount" id="childA"></my-test5>
-<button bindtap="getChild">获取子组件实例对象</button>
+<!-- <my-test5 count="{{count}}" bind:sync="syncCount" id="childA"></my-test5>
+<button bindtap="getChild">获取子组件实例对象</button> -->
+<!-- 使用vantWebapp组件 -->
+<van-button type="primary">按钮</van-button>
