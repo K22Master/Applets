@@ -11,6 +11,7 @@ Component({
   },
     // 通过behaviors进行绑定
     behaviors:[storeBindingsBehavior],
+    // 通过storeBindings进行配制
     storeBindings:{
     //  数据源
     store,

@@ -31,6 +31,15 @@
       
     ]
   },
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "packageA/cat/cat",
+        "packageA/tom/tom"
+      ]
+    }
+  ],
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "my-test2":"/components/test2/test2",
