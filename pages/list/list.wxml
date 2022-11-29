@@ -76,3 +76,8 @@
 <button bindtap="getChild">获取子组件实例对象</button> -->
 <!-- 使用vantWebapp组件 -->
 <van-button type="primary" bindtap="getInfo">按钮</van-button>
+<view>
+  ~~~~
+</view>
+<!-- 将store绑定到组件中 -->
+<my-test6></my-test6>
