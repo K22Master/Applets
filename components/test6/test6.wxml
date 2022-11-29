@@ -1,0 +1,8 @@
+<!--components/test6/test6.wxml-->
+<view>
+  {{numA}}+{{numB}}={{sum}}
+</view>
+<view>
+  <van-button type="primary" bindtap="numBBtn" data-step="{{1}}">+1</van-button>
+  <van-button type="primary" bindtap="numBBtn" data-step="{{-1}}">-1</van-button>
+</view>
